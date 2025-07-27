@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Upload Page</title>
+  <link rel="stylesheet" href="../css/uploadResumePage.css">
+</head>
+<body>
+  <!-- 主容器 -->
+  <div class="container">
+    <!-- 左侧说明区域 -->
+    <div class="left-section">
+      <h2>Finish! Upload Your Resume</h2>
+      <p>Upload your resume, the platform will help you parse and optimize, you can also skip this step</p>
+      <!-- 插图 -->
+      <div class="illustration">
+        <img src="../img/catImage.png" alt="Illustration">
+      </div>
+    </div>
+    <!-- 右侧上传操作区域 -->
+    <div class="right-section">
+      <h2>Upload file</h2>
+      <!-- 上传拖拽区域 -->
+      <div class="upload-area">
+        <label for="fileInput" class="sr-only">Upload your resume file</label>
+        <input type="file" id="fileInput" class="hidden" accept=".pdf,.docx,.doc" title="Upload your resume file">
+        <i class="icon">☁️</i>
+        <p>Drag your resume file to this area, or click on the area to select the appropriate file to upload</p>
+      </div>
+      <!-- 文件名显示 -->
+      <div id="fileName"></div>
+      <!-- 按钮组 -->
+      <div class="btn-group">
+        <button class="btn btn-last">Last step</button>
+        <button class="btn btn-finish">Finish</button>
+      </div>
+      <!-- 进度条示意 -->
+      <div class="progress">
+        <div class="progress-item active"></div>
+        <div class="progress-item active"></div>
+        <div class="progress-item"></div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/uplodeResumePage.js"></script>
+</body>
+</html>  
